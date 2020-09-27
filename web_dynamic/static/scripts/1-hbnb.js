@@ -2,7 +2,7 @@ $(document).ready(() => {
   const dictAmenity = {};
   $('li input[type="checkbox"]').change(function () {
     if ($(this).is(':checked')) {
-      dictAmenity[$(this).data('id')] = $(this).data('id');
+      dictAmenity[$(this).data('id')] = $(this).data('name');
     } else {
       delete dictAmenity[$(this).data('id')];
     }
